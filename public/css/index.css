@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+#secciones {
+  background: linear-gradient(rgba(27, 49, 85, 1), rgba(27, 49, 85, 0));
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(3, min-content);
+  grid-row-gap: 20px;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-content: space-evenly;
+}
+
+#secciones div {
+  width: 140px;
+  height: 140px;
+}
+
+#boton_apoyo_investigacion {
+  order: 1;
+}
+
+#boton_renovacion_online {
+  order: 2;
+}
+
+#boton_servicios {
+  order: 3;
+}
+
+#boton_apoyo_aprendizaje {
+  order: 4;
+}
+
+#boton_solicitud_dependencias {
+  order: 5;
+}
+
+#boton_repositorios {
+  order: 6;
+}
+
+
+.outline {
+  display:none;
+}
+
+#about {
+  background: linear-gradient(
+    to bottom,
+    #2c508c,
+    #406dba 10%,
+    #2c508c 25%,
+    #1b3155
+  );
+  height: min-content;
+  padding: 20px;
+}
+
+#about ul {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: min-content min-content;
+  justify-content: center;
+}
+
+#about li {
+  text-align: center;
+}
+
+#about a {
+  color: white;
+  padding: 0 6px;
+  white-space: nowrap;
+}
+
+#about a:hover,
+#about a:active {
+  color: var(--azul);
+  background-color: white;
+  border-radius: 10px;
+}
+
+#servicios, #repositorios {
+  background: linear-gradient(-180deg, rgba(27,49,85,1) 0%, rgba(12,80,140,1) 40%, rgba(12,80,140,1) 100%); 
+  height: 0;
+  overflow: hidden;
+  transition: height .4s;
+}
+
+#boton_servicios:hover + #servicios{ /* Acá se selecciona #servicios siempre y cuando esté al lado de un #boton_servicios con el mouse encima */
+	height: 100px;
+}
+
+  #servicios p, #repositorios p {
+    margin: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  #servicios :where(a), #repositorios :where(a){
+    color: white;
+  }
+
+  #servicios a:hover, #repositorios a:hover{
+    color: var(--verde) !important;
+  }
+
+#videos {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content min-content min-content;
+  padding: 20px;
+}
+
+#videos div:not(:nth-child(1)) {
+  margin-top: 20px;
+}
+
+.videoYT {
+  display: grid;
+  justify-content: center;
+}
+
+.videoYT iframe {
+  width: 320px;
+  height: 180px;
+}
+
+.media_titulo {
+  color: var(--azul);
+  font-size: 1rem;
+  line-height: 1.1rem;
+  margin-top: 5px;
+}
+
+.destaque {
+  color: var(--verde);
+  font-weight: bold;
+}
+
+.media_canal {
+  font-size: 1rem;
+}
+
+#ia {
+  background-color: lightblue;
+  border-radius: 30px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+#ia section:nth-child(1){
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#ia section:nth-child(2) {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#ia .logo-ia {
+  width: 80px;
+  margin: 30px 20px 0;
+  transition: transform .25s;
+}
+
+#ia .logo-ia:hover {
+  transform: scale(1.2);
+}
+
+#ia figcaption {
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.15;
+}
+
+#articulaciones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  height: 80px;
+  max-width: 630px;
+  margin: 0 auto 10px;
+}
+
+#horarios {
+  background-image: url("../img/vitrubian_chico.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#horarios article {
+  margin: 0 auto;
+}
+
+#horarios a {
+  color: white;
+}
+
+#horarios hr {
+  margin: 10px auto;
+  width: 50%;
+}
+
+.horarios_1 {
+  font: 1rem/1.33rem 'Fira Sans Condensed', sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.horarios_2 {
+  color: var(--verde);
+  font: 1.75rem/1.33rem 'Fira Sans Condensed', sans-serif;
+  font-weight: 600;
+}
+
+.fono_biblioteca {
+  font: 1.75rem/1.33rem 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+}
+
+/* ----------------------------------------------- */
+
+/* La class que le pondremos a cada objeto HTML a través de JS */
+.elastic {
+  /* «gelatina» es el nombre de la animación que durará 1.5s */
+  animation: gelatina 1s;
+  /* "transform-origin" define la posición dentro del elemento donde se origina la transformación
+        , o sea, el punto de origen, en este caso, del centro mismo. */
+  transform-origin: 50% 50%;
+  /* Que sólo se produzca 1 vez */
+  animation-iteration-count: 1;
+}
+
+@keyframes gelatina {
+  20% {transform: scale3d(0.7, 0.7, 0.7);}
+  40% {transform: scale3d(1.3, 1.3, 1.3);}
+  60% {transform: scale3d(0.8, 0.8, 0.8);}
+  70% {transform: scale3d(1.2, 1.2, 1.2);}
+  80% {transform: scale3d(0.9, 0.9, 0.9);}
+  90% {transform: scale3d(1.1, 1.1, 1.1);}
+}
+
+.boton_gelatina {
+  border: 3px solid var(--verde);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 600px)
+{
+  #secciones {display: grid;}
+
+  .card-articulacion {
+    box-shadow: 10px 10px 21px -15px rgba(27, 49, 85, 1);
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  #secciones {
+    grid-template-columns: repeat(6, min-content);
+    grid-template-rows: repeat(1, min-content);
+  }
+
+  #secciones div {
+    width: 110px;
+    height: 110px;
+  }
+
+  #about ul {
+    grid-template-columns: min-content min-content min-content min-content;
+    grid-template-rows: min-content;
+    grid-column-gap: 40px;
+  }
+
+  #boton_chungungo {order: 7;}
+
+  #videos {
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: min-content;
+    grid-column-gap: 2.5%;
+  }
+
+  #videos div:not(:nth-child(1)) {
+    margin-top: 0;
+  }
+
+  .videoYT iframe {
+    width: 250px;
+    height: 140px;
+  }
+
+  #horarios {
+    background-image: url("../img/vitrubian_grande.webp");
+    background-position: 0 -250px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  #secciones div {
+    width: 140px;
+    height: 140px;
+  }
+
+  #videos {grid-template-columns: repeat(3, 320px);}
+
+  .videoYT iframe {
+    width: 320px;
+    height: 180px;
+  }
+
+  #horarios {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: min-content min-content;
+    justify-content: center;
+    grid-row-gap: 20px;
+  }
+
+  #horarios hr {display: none;}
+}
+

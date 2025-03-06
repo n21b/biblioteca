@@ -1,0 +1,9 @@
+# Ignorar carpetas de desarrollo
+assets/
+
+# Ignorar archivos
+forticlient.txt
+ga4-google-analytics-code.txt
+notas-desarrollo.txt
+tokenantiguo.txt
+biblioteca-2022.code-workspace

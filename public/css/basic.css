@@ -1,0 +1,727 @@
+@charset "utf-8";
+
+/* /////// Reseter \\\\\\\ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* /////// Fin Reseter \\\\\\\ */
+
+
+
+/* Set core body defaults */
+body {
+  background: url("../img/fondo_chico_letras_azules.webp") no-repeat fixed
+    center;
+  background-size: cover; /* Cover cubre TODO su contenedor aunque tenga que estrecharse.*/
+  /* Al poner font en el body me aseguro de ahorrarme cualquier cantidad de código. Es crearle la tipografía por default  */
+  font: 1rem/1.6rem 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-kerning: normal;
+  color: #5C5C5C;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+:root {
+  --azul: #2c508c;
+  --azul_claro: #ecf1f9;
+  --celeste: rgba(119, 177, 212, 0.5);
+  --verde: #0ffd27;
+  --verde_oscuro: #17c028;
+}
+
+/* ========================== */
+/* Preguntas y respuestas FAQ */
+/* ========================== */
+
+.pregunta {
+  color: var(--azul);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.destaque_verde {
+  color: var(--verde);
+}
+
+.destaque_azul {
+  color: var(--azul);
+}
+
+.respuesta {
+  background-color: white;
+  margin: 5px 0;
+  padding: 20px;
+}
+
+h2 {
+  letter-spacing: -1px;
+  text-align: center;
+  font: 2rem/1.75rem 'Fira Sans Condensed', sans-serif;
+  font-weight: 200;
+  color: var(--azul);
+  margin: 20px 0;
+}
+
+h3 {
+  border-bottom: 1px solid var(--azul);
+  color: var(--azul);
+  font: 1.2rem/1.3rem 'Fira Sans Condensed', sans-serif;
+  font-weight: 600;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+h4, .pseudo-h4 {
+  background-color: var(--celeste);
+  color: var(--azul);
+  font: 1.2rem/1.3rem 'Fira Sans Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 5px 0 5px 10px;
+  margin-bottom: 10px;
+}
+
+.p_normal {
+  margin-bottom: 20px;
+}
+
+strong {
+  color: var(--azul);
+}
+
+.lista {
+  margin: 10px 0 10px 20px;
+}
+
+.principio {
+  color: var(--azul);
+  font-style: italic;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/*
+Estilos personalizados usados en la página:
+- prestamos_interbibliotecarios.php
+- quienes_somos.php
+*/
+
+.ygh4 {
+  position: relative;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+}
+
+.ygh4:after {
+  content: url("../svg/isotipo_biblioteca.svg");
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  right: -10px;
+  position: absolute;
+}
+
+.ygol li {
+  list-style: decimal;
+  margin: 10px 0;
+  color: #5C5C5C;
+}
+
+.ygul {
+  padding: 5px 0 10px;
+}
+
+/* Configuración de la viñeta */
+.ygul li {
+  margin: 5px 25px 0; /* separar el bloque de un <li> */
+  list-style-image: url("../img/bullet_verde.png");
+  padding-inline-start: 0.5rem;
+}
+
+/* ------------------- ÁREAS ------------------- */
+
+#container {
+  display: grid;
+  grid-template-rows: min-content;
+  max-width: 1220px;
+}
+
+#contenido { /* No presente en la página index */
+  padding: 25px 5% 50px;
+  margin: 0 auto;
+  display: grid;
+  width: 100%;
+}
+
+#contenido_v2 { /* No presente en la página index */
+  padding: 30px 0;
+  margin: 0 auto;
+  display: grid;
+}
+
+.punteo_01 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.punteo_01 li {
+  list-style-image: url("../img/bullet_verde.png");
+  margin: 0 0 0.8rem 2rem;
+  padding-left: 0.5rem;
+}
+
+.punteo_01 li a:link,
+.punteo_01 li a:visited,
+.punteo_01 li a:active {
+  color: var(--azul); 
+}
+
+.punteo_01 li a:hover {color: var(--verde_oscuro);}
+
+/* + Selecciona el segundo elemento (.punteo_01) colocado inmediatamente después del primero (h4) */
+h4 + .punteo_01 {margin-top: 1rem;}
+
+main {
+  background-color: rgba(236, 241, 249, 0.75);
+}
+
+footer {
+  background: linear-gradient(to bottom, #2c508c, #406dba 10%, #2c508c 25%, #1b3155);
+  border-top: 2px solid var(--verde);
+  overflow: hidden;
+  position: relative;
+  height:11rem;
+}
+
+/* Input del DESCUBRIDOR */
+input:not([type="submit"]) {
+  background-color: var(--celeste);
+  border: 1px solid var(--azul);
+  border-radius: 5px;
+  padding: 3px 6px;
+}
+
+input::placeholder {
+  font: 1.2rem/1.3rem 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  color: var(--azul);
+}
+
+label {
+  margin: 10px;
+}
+
+text:valid,
+email:valid {
+  background-color: #b2e0ba;
+}
+
+fieldset {
+  padding: 30px;
+  width: 80%;
+}
+/* Fin del campo del DESCUBRIDOR*/
+
+/* El HEADER lleva:
+- Indicadores diarios.
+- Cabecera y sus SVGs.
+- NAV importado abajo.
+*/
+
+#indicadores_diarios {
+  background-color: var(--azul);
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+}
+
+#indicadores_diarios #dia {
+  color: var(--verde);
+}
+
+#indicadores_diarios li {
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.linea-separatoria{
+  margin: 10px 0;
+}
+
+/* ------------ Zona de logos en la cabecera -------------*/
+#zona_logos {
+  height: 120px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+
+#logo_Biblioteca_fondo {
+  /* margin-top: -120px; */
+  position: absolute;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+#logos_cabecera {
+  place-self: center;
+  max-height: 104px;
+  max-width: 90%;
+  z-index: 2;
+}
+
+#libro_cabecera {
+  bottom: 0;
+  position: absolute;
+  right: 5%;
+  width: 100px;
+  z-index: 3;
+}
+/* ------------ FIN Zona de logos en la cabecera -------------*/
+
+/* Menú superior en donde aparece INICIO ACTIVIDADES... */
+#menu {
+  background-color: white;
+  border-bottom: 2px solid var(--verde);
+  height: min-content;
+  text-align: center;
+}
+
+#menu ul {
+  padding: 10px;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu a {
+  color: var(--azul);
+  padding: 0 6px;
+}
+
+#menu a:hover,
+#menu a:active {
+  background-color: var(--verde);
+  border-radius: 10px;
+}
+
+
+#catalogo {
+  background: linear-gradient(
+    to top,
+    #2c508c,
+    #406dba 10%,
+    #2c508c 25%,
+    #1b3155
+  );
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#catalogo ul {
+  display: block;
+}
+
+#catalogo li {
+  padding: 5px 0;
+}
+
+#catalogo a {
+  color: white;
+}
+
+#catalogo a:hover {
+  color: var(--verde);
+}
+
+#descubridor {
+  width: 100%;
+}
+
+#campo_descubridor {
+  border-radius: 10px;
+  /* background: linear-gradient(90deg, rgba(255,255,255,1) 81%, rgba(160,255,163,1) 100%); */
+  background: white url("../img/fondo-input-descubridor.webp") no-repeat top right;
+  border: solid var(--verde) 2px; 
+  height: 40px;
+  margin: 20px 0;
+  width: 70%;
+}
+
+input:focus {
+  border:none;
+}
+
+input::placeholder {
+  color: rgb(196, 196, 196);
+  font-size: 0.9rem;
+}
+
+#submit_descubridor {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("../svg/lupa.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  border: none;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+#catalogo li img {
+  margin-left: 10px;
+  display: inline;
+}
+
+#descubridor {
+  position: relative;
+}
+
+.popup {
+  position: absolute;
+  color: white;
+  font-size: 10pt;
+  display:block;
+  padding: 10px;
+  opacity: 0;
+  background-color: var(--azul);
+  border-radius: 20px;
+  transition: opacity .5s;
+}
+/* FIN Catálogo DESCUBRIDOR */
+
+#rrss {
+  display: grid;
+  grid-template-columns: 40px 30px 40px 40px 40px 40px 40px 40px;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo_facultad {
+  display: block;
+  margin: 0 auto 20px;
+  width: 120px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Ventanas desplegables QUIENES SOMOS */
+
+.pestana + .oculta {
+  display: none;
+  transition: display 2s;
+}
+
+.activada {
+  display: block;
+}
+
+/* El Chungungo que invita a añadir RRSS */
+#chungungo_footer {
+  display: none;
+  top: 10px;
+  margin-right: -200px;
+  position: absolute;
+  right: 0;
+}
+
+/* Animación del chungungo */
+.chungungo_salir {
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.5s ease-out;
+}
+
+.chungungo_entrar {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.5s ease-in;
+}
+
+/* ELEMENTOS ESTÉTICOS */
+
+.mini-link {
+  display: inline;
+  width: 10px;
+  height: 10px;
+  margin-bottom: 5px;
+}
+
+/* ------------ SVG SOUND ON SOUND OFF ------------ */
+
+.icons-sound {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+}
+  
+  .icons-sound img {
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+    transition: transform .25s;
+  }
+
+  .icons-sound img:hover {
+    transform: scale(1.8);
+  }
+
+img:first-child {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+.boton {
+  background: linear-gradient(
+    to top,
+    #2c508c,
+    #406dba 10%,
+    #2c508c 25%,
+    #1b3155
+  );
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 350px;
+  padding: 10px;
+  margin-top: 30px;
+}
+/* APOYO_APRENDIZAJE */
+/* Para los logitos de las distintas facultades que aparecen en apoyo_aprendizaje */
+
+#facultades, #gestores{
+  padding-bottom: 30px;
+}
+
+#facultades img,
+#gestores img {
+  width:30%;
+  display: inline;
+}
+
+#cct img {
+  width:40%;
+  margin: 0 5px;
+  display: inline;
+}
+
+.caja_botones {
+  text-align: center;
+}
+
+#manuales img {
+  display: inline;
+  margin: 0 2%;
+  width:20%;
+}
+
+.boton img {
+  display: inline;
+  margin-bottom: -3px; /* El colmo del detallismo. Así la imagen me queda visualmente centrada con el texto*/
+  margin-right: 10px;
+  width: 30px;
+}
+
+.boton a {
+  color: white;
+}
+
+hr.azul {
+  border: 1px dotted var(--azul);
+}
+
+.outline {
+  display:none;
+}
+
+.boton_gelatina {
+  cursor: pointer;
+}
+
+.elastic {
+  animation: gelatina 1s;
+  transform-origin: 50% 50%;
+  animation-iteration-count: 1;
+}
+
+@keyframes gelatina {
+  20% {transform: scale3d(0.7, 0.7, 0.7);}
+  40% {transform: scale3d(1.3, 1.3, 1.3);}
+  60% {transform: scale3d(0.8, 0.8, 0.8);}
+  70% {transform: scale3d(1.2, 1.2, 1.2);}
+  80% {transform: scale3d(0.9, 0.9, 0.9);}
+  90% {transform: scale3d(1.1, 1.1, 1.1);}
+}
+
+@media only screen and (min-width: 600px) {
+  #guias {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  #facultades img,
+  #gestores img {
+    width:20%;
+    display: inline;
+  }
+
+  #manuales img {
+    display: inline;
+    margin: 10px 2%;
+    width:15%;
+  }
+
+  #chungungo_footer {
+    display: inline;
+  }
+
+  #logo_Biblioteca_fondo {
+    margin-top: -50px;
+  }
+
+  #libro_cabecera {
+    width: 130px;
+  }
+
+  #logo_Biblioteca {
+    left: 22%;
+    width: 170px;
+  }
+
+  #catalogo li {
+    display: inline-block;
+    padding: 5px 2%;
+  }
+}
+
+/* ------------ de 735 pa' arriba ------------  */
+/* -------------------------------------------  */
+
+@media only screen and (min-width: 735px) {
+  body {
+    background: url("../img/fondo_grande_letras_azules.webp") no-repeat fixed
+      center;
+    background-size: cover;
+  }
+
+  #logo_Biblioteca_fondo {
+    margin-top: -80px;
+  }
+
+  #logo_Biblioteca {
+    width: 180px;
+  }
+
+  #libro_cabecera {
+    width: 160px;
+  }
+
+  .chungungo_salir {
+    transform: translate3d(-130%, 0, 0);
+  }
+}
+
+/* ------------ de 850 pa' arriba ------------  */
+/* -------------------------------------------  */
+@media only screen and (min-width: 850px) {
+  #logo_Biblioteca_fondo {
+    margin-top: -80px;
+  }
+
+  #logo_Biblioteca {
+    left: 18%;
+    width: 170px;
+  }
+
+  #catalogo li {
+    width: min-content;
+    white-space: nowrap;
+  }
+
+  .chungungo_salir {
+    transform: translate3d(-160%, 0, 0);
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  #logo_Biblioteca_fondo {
+    margin-top: -130px;
+  }
+
+  #logo_Biblioteca {
+    left: 15%;
+    width: 180px;
+  }
+
+  .chungungo_salir {
+    transform: translate3d(-230%, 0, 0);
+  }
+}
+
+/* --- min 1000px --- */
+/* @media only screen and (min-width: 1000px) {
+  #contenido {
+    width: 100%;
+  }
+} */
+
+/* --- min 1200px --- */
+@media only screen and (min-width: 1220px) {
+  body {
+    background: url("../img/fondo_letras_azules_blancos.webp") no-repeat fixed
+      center;
+    background-size: cover;
+  }
+
+  #container {
+    box-shadow: 0px 0px 50px 0px rgba(44, 80, 140, 1);
+    margin: 0 auto;
+  }
+
+  #logo_Biblioteca_fondo {
+    margin-top: -160px;
+  }
+
+  #logo_Biblioteca {
+    left: 15%;
+    width: 180px;
+  }
+
+  .chungungo_salir {
+    transform: translate3d(-280%, 0, 0);
+  }
+}
