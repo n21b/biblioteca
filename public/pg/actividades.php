@@ -15,16 +15,16 @@
         <h2>Auditórium</h2>
         <p class="p_normal">Disponemos de un auditórium abierto a la comunidad universitaria disponible para la realización de actividades académicas y de extensión. Entregamos el equipamiento tecnológico y técnico necesario para todas las actividades que sean requeridas.</p>
         
-        <table class="multicolumna">
+<!--         <table class="multicolumna">
             <thead><tr><th>Día</th><th>Fecha</th><th>Hora</th><th>Descripción</th></tr></thead>
             <tbody>
                 <tr><td>Lu</td><td>4 de septiembre</td><td>12:00 a 17:00 h</td><td>Presentación tesina Pedagogía en Matemáticas.</td></tr>
             </tbody>
-        </table>
+        </table> -->
 
-         <p class="p_normal">Para solicitar cualquier de las dependencias antes señaladas, deberá completar el siguientes <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=snownTLjw0OTqj5ySP_nfXToHUf00htBgwsjs7STbBFUQkFWSTZENjhVTDU1REExN0ZOV1JRR1pRNS4u">formulario</a>.</p>
+         <p class="p_normal">Para solicitar cualquier de las dependencias antes señaladas, deberá completar el siguiente <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=snownTLjw0OTqj5ySP_nfXToHUf00htBgwsjs7STbBFUQkFWSTZENjhVTDU1REExN0ZOV1JRR1pRNS4u">formulario</a>.</p>
          <p class="p_normal">Si la solicitud de alguna de estas dependencias fuera después del horario de trabajo y esto significase una extensión en el horario del personal necesario para operar dichas dependencias, deberá ser cancelado por la facultad o departamento encargado de la actividad.</p>
-         <p class="p_normal">En caso de realizarse cóctel o coffee break, éstos deberán ser con platos FRÍOS. Queda ESTRICTAMENTE PROHIBIDA la preparación de alimentos en los recintos de la biblioteca.</p>
+         <p class="p_normal">En caso de realizarse cóctel o coffee break, éstos deberán ser con platos FRÍOS. No se permite la preparación de alimentos en los recintos de la biblioteca.</p>
 
 
     </main>
