@@ -145,32 +145,49 @@
   font-size: 1rem;
 }
 
+
+
+
+
+
 #ia {
   background-color: lightblue;
   border-radius: 30px;
-  width: 70%;
+
+  width: 80%;
   margin: 20px auto;
+
 }
 
-#ia section:nth-child(1){
+#ia section:nth-child(1){   /* Donde aparecen los logos */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-#ia section:nth-child(2) {
+#ia section:nth-child(2) {   /* Donde aparecen los enlaces a uso ético de la info y otras IA */
   text-align: center;
   padding: 10px 0;
 }
 
-#ia .logo-ia {
+#ia .logo-ia {   /* Cada cuadrito que contiene un logo */
   width: 80px;
   margin: 30px 20px 0;
+  text-align: center;
+  
   transition: transform .25s;
 }
 
 #ia .logo-ia:hover {
   transform: scale(1.2);
+}
+
+.logo-ampliar {   /* Cada cuadrito que contiene un logo */  
+  transition: transform .25s;
+}
+
+.logo-ampliar:hover {
+  transform: scale(1.3);
 }
 
 #ia figcaption {
@@ -179,12 +196,24 @@
   line-height: 1.15;
 }
 
+#arti {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 70%;
+  margin: 20px auto;
+}
+
+#arti article {
+  width: 160px;
+}
+
 #articulaciones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   height: 80px;
-  max-width: 630px;
+  
   margin: 0 auto 10px;
 }
 

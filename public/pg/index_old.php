@@ -42,7 +42,7 @@
         <!-- La div que debe aparecer -->
             <section id="servicios">
                 <h2 class="outline">Servicios de Biblioteca</h2>
-                <p><a href="mailto:natalia.cortes@uantof.cl">Consulta referencista</a> ■ <a href="prestamos_interbibliotecarios.php">Préstamos interbibliotecarios</a> ■  <a href="cuenta_remota.php">Creación de cuenta/Recuperación de contraseña</a><br><a href="javascript:void();">Solicitud de capacitación</a> ■ <a href="javascript:void();">Solicitud de apoyo a asignaturas</a> ■ <a href="https://forms.office.com/r/bbTcpgm6wK">Certificado de No Deuda para titulación</a> ■ <a href="https://forms.office.com/r/kPvmijvscV">Certificado de Retiro y Renuncia</a></p>
+                <p><a href="https://forms.office.com/r/PETLNNrEjh">Consulta referencista</a> ■ <a href="prestamos_interbibliotecarios.php">Préstamos interbibliotecarios</a> ■  <a href="cuenta_remota.php">Creación de cuenta/Recuperación de contraseña</a><br><a href="javascript:void();">Solicitud de capacitación</a> ■ <a href="javascript:void();">Solicitud de apoyo a asignaturas</a> ■ <a href="https://forms.office.com/r/bbTcpgm6wK">Certificado de No Deuda para titulación</a> ■ <a href="https://forms.office.com/r/kPvmijvscV">Certificado de Retiro y Renuncia</a></p>
             </section>
 
         <!-- Colocar "javascript:void();" en href impide que al hacer click me envié hacia la parte superior de la página (con # pasa eso) -->
@@ -60,10 +60,10 @@
                     <li><a href="monitor.php">Monitor legislativo</a></li>
                 </ul>
             </section>
-
+            
             <!-- Sección VIDEOS de YouTube -->
             <br>
-            
+
             <h3>Videos recomendados</h3>
             <section id="videos">
                 <h2 class="outline">Video recomendados</h2>
@@ -86,19 +86,6 @@
                     <p class="media_titulo">Salud mental</p>
                 </div>
             </section><!-- Fin section VIDEOS -->
-
-            <h3>Inteligencias artificiales</h3>
-            <section id="ia">
-                <section>
-                        <figure class="logo-ia"><a href="https://chat.openai.com/" alt="logo-chatgpt" title="ChatGPT" target="_blank"><img src="../img/logos-ia/chatgpt-logo.svg" alt=""></a><figcaption>ChatGPT</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://bard.google.com/chat" alt="logo-bard" title="Google Bard" target="_blank"><img src="../img/logos-ia/bard-logo.svg" alt=""></a><figcaption>Google Bard</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://copilot.microsoft.com/" alt="logo-copilot" title="Microsoft Copilot" target="_blank"><img src="../img/logos-ia/copilot-logo.svg" alt=""></a><figcaption>Microsoft Copilot</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://claude.ai/" alt="logo-claude" title="Anthropic Claude" target="_blank"><img src="../img/logos-ia/claude-logo.svg" alt=""></a><figcaption>Anthropic Claude</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://www.perplexity.ai/" alt="logo-perplexity" title="perplexity" target="_blank"><img src="../img/logos-ia/perplexity-logo.svg" alt=""></a><figcaption>Perplexity</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://elicit.com/" alt="logo-elicit" title="Elicit research assistant. INVESTIGADORES" target="_blank"><img src="../img/logos-ia/elicit-logo.svg" alt=""></a><figcaption>Elicit (research)</figcaption></figure>
-                </section>
-                <section><p><a href="uso_ia.php">Uso ético de la IA.</a> | <a href="ia.php">Acceso a otras IA por clasificación.</a></p></section>
-            </section>
 
             <h3>Articulaciones</h3>
             <section id="articulaciones">

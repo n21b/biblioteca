@@ -11,11 +11,8 @@
             
       <h3>Chatbots y asistentes</h3>
       <ul class="punteo_01">
-        <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
         <li><a href="https://www.chatpdf.com/" target="_blank">ChatPDF</a></li>
-        <li><a href="https://bard.google.com/chat" target="_blank">Bard</a></li>
         <li><a href="https://pdf.ai/" target="_blank">PDF AI</a>: Para usar con PDFs.</li>
-        <li><a href="https://www.perplexity.ai/" target="_blank">Perplexity</a></li>
         <li><a href="https://www.humata.ai/" target="_blank">Humata</a>: Para resumir y analizar PDFs.</li>
         <li><a href="https://chromewebstore.google.com/detail/youtube-summary-with-chat/nmmicjeknamkfloonkhhcjmomieiodli?pli=1" target="_blank">YouTube summary</a> (Extensión Chrome).</li>
         <li><a href="https://askyourpdf.com/" target="_blank">Ask your PDF</a>: Trabaja con PDFs.</li>
@@ -26,7 +23,6 @@
       <ul class="punteo_01">
         <li><a href="https://www.canva.com/es_es/" target="_blank">Canva</a>: Diseño práctico.</li>
         <li><a href="https://tome.app/" target="_blank">Tome</a>: Crea presentaciones</li>
-        <li><a href="https://www.bing.com/images/create?toWww=1&redig=E89982ADF6304667AC7435A385EA4CB9" target="_blank">Bing image creator</a>: Creación de imágenes.</li>
         <li><a href="https://www.heygen.com/" target="_blank">HeyGen</a>: Crea audio y avatares para presentaciones.</li>
         <li><a href="https://www.slidesai.io/" target="_blank">Slides AI</a>: Creador de presentaciones.</li>
         <li><a href="https://generated.photos/faces" target="_blank">Generated faces</a>: Generador de caras aleatorias.</li>
@@ -61,9 +57,7 @@
 
       <h3>Investigación científica</h3>
       <ul class="punteo_01">
-      <li><a href="https://elicit.com/">Elicit</a>: Investigación científica. Análisis de research papers.</li>
       <li><a href="https://easywithai.com/ai-research-tools/scispace/" target="_blank">SciSpace Copilot</a>: Asistente de investigación científica.</li>
-      <li><a href="https://www.semanticscholar.org/" target="_blank">Semantic Scholar</a>: Herramienta de búsqueda en textos científicos.</li>
       <li><a href="https://www.litmaps.com/" target="_blank">Litmaps</a>: Navegador personal de literatura.</li>
       <li><a href="https://consensus.app/search/">Consensus</a>: Encuentre respuestas en cualquier tópico de búsqueda.</li>
       <li><a href="https://jenni.ai/">jenni</a>: Motor de asistencia IA para papers</li>

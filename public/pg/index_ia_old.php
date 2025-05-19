@@ -42,7 +42,7 @@
         <!-- La div que debe aparecer -->
             <section id="servicios">
                 <h2 class="outline">Servicios de Biblioteca</h2>
-                <p><a href="https://forms.office.com/r/PETLNNrEjh">Consulta referencista</a> ■ <a href="prestamos_interbibliotecarios.php">Préstamos interbibliotecarios</a> ■  <a href="cuenta_remota.php">Creación de cuenta/Recuperación de contraseña</a><br><a href="javascript:void();">Solicitud de capacitación</a> ■ <a href="javascript:void();">Solicitud de apoyo a asignaturas</a> ■ <a href="https://forms.office.com/r/bbTcpgm6wK">Certificado de No Deuda para titulación</a> ■ <a href="https://forms.office.com/r/kPvmijvscV">Certificado de Retiro y Renuncia</a></p>
+                <p><a href="mailto:natalia.cortes@uantof.cl">Consulta referencista</a> ■ <a href="prestamos_interbibliotecarios.php">Préstamos interbibliotecarios</a> ■  <a href="cuenta_remota.php">Creación de cuenta/Recuperación de contraseña</a><br><a href="javascript:void();">Solicitud de capacitación</a> ■ <a href="javascript:void();">Solicitud de apoyo a asignaturas</a> ■ <a href="https://forms.office.com/r/bbTcpgm6wK">Certificado de No Deuda para titulación</a> ■ <a href="https://forms.office.com/r/kPvmijvscV">Certificado de Retiro y Renuncia</a></p>
             </section>
 
         <!-- Colocar "javascript:void();" en href impide que al hacer click me envié hacia la parte superior de la página (con # pasa eso) -->
@@ -60,61 +60,63 @@
                     <li><a href="monitor.php">Monitor legislativo</a></li>
                 </ul>
             </section>
-            
+
             <!-- Sección VIDEOS de YouTube -->
             <br>
-
+            
             <h3>Videos recomendados</h3>
             <section id="videos">
                 <h2 class="outline">Video recomendados</h2>
                 <!-- width 320, height 180 -->
                 <div class="videoYT">
-                <p class="media_canal">Planeta Formación y Universidades</p>
-                <iframe src="https://www.youtube.com/embed/ijsrWdObnU0?si=idRi4Mc2wCcQjrr6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p class="media_titulo">IA, Educación y futuro</p>
+                <p class="media_canal">C-TyS UA</p>
+                <iframe src="https://www.youtube.com/embed/exyBdVJxl4Q?si=qUJMWeyZiTIM_AO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="media_titulo">Ciencias extremas</p>
                 </div>
 
                 <div class="videoYT">
-                <p class="media_canal">UNIR | La Universidad de Internet</p>
-                <iframe src="https://www.youtube.com/embed/88ZGFlUHxYk?si=ZIp3cA6LzYAldsu7&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p class="media_titulo">La gamificación en el aula</p>
+                <p class="media_canal">Educación 3.0</p>
+                <iframe src="https://www.youtube.com/embed/OrWb0BTAmgA?si=d2Xw8Bii4g2aXhUj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="media_titulo">IA en la educación</p>
                 </div>
 
                 <div class="videoYT">
                 <p class="media_canal">TEDx Talks</p>
-                <iframe src="https://www.youtube.com/embed/1TQxM3lpCf4?si=682PQdRyryPNbu-p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p class="media_titulo">Sobrevivir en el aula</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_9agX3gY1jU?si=9smI5q9uHskvF_Ez" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="media_titulo">Salud mental</p>
                 </div>
             </section><!-- Fin section VIDEOS -->
-
 
             <h3>Inteligencias artificiales</h3>
             <section id="ia">
                 <section>
-                        <figure class="logo-ia"><a href="https://chat.openai.com/" title="ChatGPT" target="_blank"><img src="../svg/logos-ia/chatgpt-logo-white.svg" alt="logo-chatgpt"></a><figcaption>ChatGPT</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://gemini.google.com/app?hl=es" title="Google Gemini" target="_blank"><img src="../svg/logos-ia/gemini-logo-white.svg" alt="Logo de Google Gemini"></a><figcaption>Gemini</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://copilot.microsoft.com/" title="Microsoft Copilot" target="_blank"><img src="../svg/logos-ia/copilot-logo-white.svg" alt="Logo de Microsoft Copilot"></a><figcaption>Copilot</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://claude.ai/" title="Anthropic Claude" target="_blank"><img src="../svg/logos-ia/claude-logo-white.svg" alt="Logo de Anthropic Claude"></a><figcaption>Claude</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://www.perplexity.ai/" title="perplexity" target="_blank"><img src="../svg/logos-ia/perplexity-logo-white.svg" alt="Logo de Perplexity"></a><figcaption>Perplexity</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://elicit.com/" title="Elicit research assistant. INVESTIGADORES" target="_blank"><img src="../svg/logos-ia/elicit-logo-white.svg" alt="Logo de Elicit"></a><figcaption>Elicit</figcaption></figure>
-                        <figure class="logo-ia"><a href="https://www.semanticscholar.org/" title="Semantic Scholar, búsqueda por IA de literatura científica. INVESTIGADORES" target="_blank"><img src="../svg/logos-ia/semantic-scholar-logo-white.svg" alt="Logo de Semantic Scholar"></a><figcaption>Semantic Scholar</figcaption></figure>
-                        
+                        <figure class="logo-ia"><a href="https://chat.openai.com/" alt="logo-chatgpt" title="ChatGPT" target="_blank"><img src="../img/logos-ia/chatgpt-logo.svg" alt=""></a><figcaption>ChatGPT</figcaption></figure>
+                        <figure class="logo-ia"><a href="https://bard.google.com/chat" alt="logo-bard" title="Google Bard" target="_blank"><img src="../img/logos-ia/bard-logo.svg" alt=""></a><figcaption>Google Bard</figcaption></figure>
+                        <figure class="logo-ia"><a href="https://copilot.microsoft.com/" alt="logo-copilot" title="Microsoft Copilot" target="_blank"><img src="../img/logos-ia/copilot-logo.svg" alt=""></a><figcaption>Microsoft Copilot</figcaption></figure>
+                        <figure class="logo-ia"><a href="https://claude.ai/" alt="logo-claude" title="Anthropic Claude" target="_blank"><img src="../img/logos-ia/claude-logo.svg" alt=""></a><figcaption>Anthropic Claude</figcaption></figure>
+                        <figure class="logo-ia"><a href="https://www.perplexity.ai/" alt="logo-perplexity" title="perplexity" target="_blank"><img src="../img/logos-ia/perplexity-logo.svg" alt=""></a><figcaption>Perplexity</figcaption></figure>
+                        <figure class="logo-ia"><a href="https://elicit.com/" alt="logo-elicit" title="Elicit research assistant. INVESTIGADORES" target="_blank"><img src="../img/logos-ia/elicit-logo.svg" alt=""></a><figcaption>Elicit (research)</figcaption></figure>
                 </section>
                 <section><p><a href="uso_ia.php">Uso ético de la IA.</a> | <a href="ia.php">Acceso a otras IA por clasificación.</a></p></section>
             </section>
 
             <h3>Articulaciones</h3>
-            <section id="arti">
-                <article id="beic" class="logo-ampliar">
-                    <a href="https://beic.cl"><img src="../svg/logos-articulaciones/boton-horizontal-beic-white.svg" alt="BEIC"></a>
+            <section id="articulaciones">
+                <h2 class="outline">Botones de articulaciones</h2>
+
+                <article class="card-articulacion" id="acacia">
+                    <h3 class="outline">Botón BEIC</h3>
+                    <a href="https://beic.cl"><img loading="lazy" src="../img/logos-articulaciones/boton_horizontal_beic.webp" title="BEIC"></a>
                 </article>
 
-                <article id="cabid" class="logo-ampliar">
-                    <a href="http://cabid.cl/"><img src="../svg/logos-articulaciones/boton-horizontal-cabid-white.svg" alt="CABID"></a>
+                <article class="card-articulacion" id="beic">
+                <h3 class="outline">Botón CABID</h3>
+                    <a href="http://cabid.cl/"><img loading="lazy" src="../img/logos-articulaciones/boton_horizontal_cabid.webp" title="CABID"></a>
                 </article>
 
-                <article id="acacia" class="logo-ampliar">
-                    <a href="https://acacia.red/"><img src="../svg/logos-articulaciones/boton-horizontal-acacia-white.svg" alt="Acacia"></a>
+                <article class="card-articulacion" id="cabid">
+                <h3 class="outline">Botón Acacia</h3>
+                    <a href="https://acacia.red/"><img loading="lazy" src="../img/logos-articulaciones/boton_horizontal_acacia.webp" title="Acacia"></a>
                 </article>
             </section>
 
